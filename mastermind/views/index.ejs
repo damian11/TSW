@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src='jquery.min.js'></script>
+    <script src='/js/skrypt.js'></script>
+  </head>
+  <body>
+    <p>Welcome to <%= title %></p>
+      <form>
+            <label for="size">Rozmiar planszy</label>
+            <input type="text" id="size"  />
+            <label for="size">Liczba kolorów</label>
+            <input type="text" id="dim"  />
+            <label for="size">Maksymalna liczba ruchów</label>
+            <input type="text" id="max"  />
+          <input type="button" id="startGameButton" value="Rozpocznij grę"/>
+      </form>
+      <div id="message" >Mastermind - gra nie rozpoczęta</div>
+      <form id="colorsForm"></form>
+      <div id="playground" ></div>
+  </body>
+</html>
